@@ -7,20 +7,31 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans|Open+Sans|Roboto" rel="stylesheet">
 	</head>
 	<style>
 		.header{
 				position: fixed;
-				padding: 20px 0;
-				border-bottom: 1px solid black;
+				padding: 10px 0;
+				border-bottom: 1px solid #9E9E9E;
 				background-color: white;
 				font-weight: bold;
 				z-index: 1;
 				width: 100%;
+				text-align: center;
+				font-size: 15px;
+				font-family: 'Roboto', sans-serif;
 		}	
+		.header a{
+			color: #424242;
+			text-decoration: none;
+		}
 		.header-image{
 				position: relative;	
-				height: 600px;
+				height: 800px;
 				background-image: url("img.jpg");
 				background-attachment: fixed;
 				background-position: center;
@@ -34,33 +45,38 @@
 		}
 		.website-name{
 				text-align: center;
-				font-size: 70px;
+				font-size: 100px;
 				color: white;
+				font-family: 'Dosis', sans-serif;
 		}
 		.website-border{
-				border: 2px solid white;
+				border: 1px solid white;
 		}
 		.website-description{
 				text-align: center;
 				font-size: 20px;
 				color: white;
 				padding: 20px;
-				font-weight: bold;
+				font-family: 'Open Sans', sans-serif;
+		}
+		.section{
+				margin-bottom: 80px;
 		}
 		.section-heading h2{
 				text-align: center;
-				font-weight: bold;
 				font-size: 40px;
 				padding: 15px;
+				font-family: 'Dosis', sans-serif;
 		}
 		.section-heading-border{
 				border: 1px solid brown;
 		}
 		.section-description{
 				text-align: center;
-				font-size: 20px;
+				font-size: 25px;
 				padding: 35px 0 0 0;
 				color: #616161;
+				font-family: 'Josefin Sans', sans-serif;
 		}
 		.about-tim-container img{
 				padding: 10px;
@@ -68,108 +84,212 @@
 		}
 		.what-we-do-container img{
 				width: 110px;
+				margin-top: 30px;
+				margin-left: 7px;
+
 		}
 		.what-we-do-subheading {
 				text-align: center;
 				font-weight: bold;
 				font-size: 20px;
+				font-family: 'Roboto', sans-serif;
+				margin-right: 35px;
+				font-family: 'Roboto', sans-serif;
 		}
 		.what-we-do-paragraph {
 				text-align: center;
-				font-size: 15px;
+				font-size: 20px;
 				color: #616161;
 				margin: 10px;
+				font-family: 'Josefin Sans', sans-serif;
 		}
 		.our-famous-freebies-container img{
 				width: 350px;
 				padding: 0px;
 		}
+		.our-famous-freebies-container img:hover{
+			border: 2px solid black;
+		}
 		.freebie-image-subheading-1{
 				text-align: center;
 				font-size: 20px;
 				color: grey;
+				font-family: 'Roboto', sans-serif;
 		} 
 		.freebie-image-subheading-2{
 				text-align: center;
-				font-size: 25px;
+				font-size: 30px;
+				font-family: 'Dosis', sans-serif;
+				font-weight: bold;
 		}	
 		.freebie-image-desc{
 				text-align: center;
-				margin-top: 20px;
+				margin-top: 10px;
 				color: #616161;
-				font-size: 18px;
+				font-size: 17px;
 				padding: 10px;
-		}
-		button{
+				font-family: 'Josefin Sans', sans-serif;
+		}	
+		.button1 button{
+				
 				border: 1px solid grey;
 				border-radius: 16px;
 				font-weight: bold;
 				font-size: 12px;
-		}	
-		.button1 button{
 				background-color: white;
 				color: #616161;
+				margin-bottom: 20px;
 		}
 		.button2 button{
+				border: 1px solid grey;
+				border-radius: 16px;
+				font-weight: bold;
+				font-size: 12px;
 				background-color: #424242;
 				color: white;
+				margin-bottom: 10px;
+		}
+		#ab, #fa , #ko{
+				display: none;
 		}
 		.names{
 				text-align:center;
 				font-size:18px;
-				margin:50px;
+				margin:30px;
 				padding:20px;
 				cursor:pointer;
 				color:#263238;
 				font-family: 'Roboto';
 				font-weight: bold;
+				font-family: 'Dosis', sans-serif;
 		}
 		.team-container img{
 				width: 120px;
 				border:5px solid #EF9A9A;
 				padding:0;
+				margin-left: 70px;
 		}
 		.team{
 				padding:30px;
 				margin:50px 0;
 		}
+		.team-member-name{
+				text-align: center;
+				font-family: 'Dosis', sans-serif;
+		}
+		.team-member-desc{
+				text-align: center;
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 18px;
+		}
 		.social{
-				margin:20px;
+				margin-left: 40px;
 				cursor: pointer;
+		}
+		.social li{
+				display: inline;
+		}
+		.social li:hover{
+				color: green;
 		}
 
 		.Numbers-sub-part1{
 				font-size:25px;
 				text-align: center;
 				padding: 20px;
+				font-family: 'Roboto', sans-serif;
 		}
 		.Numbers-sub-part2{
 				font-size:20px;
 				text-align: center;
 				padding: 5px;
+				font-family: 'Dosis', sans-serif;
 		}
 		.Numbers-sub-part3{
-				font-size:35px;
+				font-size:50px;
 				color: grey;
 				text-align: center;
 				padding: 5px;
+				font-family: 'Josefin Sans', sans-serif;
 		}
-		#map {
-        	height: 400px;
-        	width: 100%
+		.box{	
+				position: absolute;
+				margin-top: 40px;
+				height: 480px;
+				width: 350px;
+				border: 1px solid white;
+				background-color: white;
+				z-index: 1;
+		}
+		.box h2{
+				font-weight: bold;
+				font-size: 25px;
+				text-align: center;
+				padding: 10px;
+		}
+		.address{
+				font-size: 20px;
+				text-align: center;
+				padding: 20px;
+				color: #9E9E9E;
+		}
+		.box-button-1 button{
+			background-color: #424242;
+			color: white;
+			margin-left: 70px;
+			border: none;
+			font-size:20px;
+			text-align: center;
+			height: 40px;
+			width: 200px;
+		}
+		.comment{
+			text-align:center;
+			font-size: 25px;
+			color:#263238;
+			margin:20px;
+		}
+		.box-button-2 button{
+			background:white;
+			font-size:16px;
+			margin:auto 2%;
+			border:1px solid #757575;
+			width:150px;
+			color:#9E9E9E;
+			padding: 10px;
+		}
+
+		#map {	
+				position: relative;
+	        	height: 540px;
+	        	width: 100%;
        }
+
+		.footer{
+				background-color:#263238;
+				color:white;
+				height:50px;
+		}
+		.footer li{
+				display:inline;
+				padding: 20px;
+				text-align:center;
+				font-size: 20px;
+				cursor:pointer;
+				margin-top: 10px;
+		}
 	</style>
 	<body>
 		<div class="container-fluid">
 			<div class="row header">
-				<div class="col-md-2">CREATIVE TIM</div>
-				<div class="col-md-10">
-					<div class="col-md-1">About</div>
-					<div class="col-md-2">What we do</div>
-					<div class="col-md-3">Our Famous Freebies</div>
-					<div class="col-md-3">Our Premium UI tools</div>
-					<div class="col-md-1">Team</div>
-					<div class="col-md-2">Numbers Don't Lie</div>
+				<div class="col-md-3"><a href="#">CREATIVE TIM</a></div>
+				<div class="col-md-9">
+					<div class="col-md-2"><a href="#about">About</a></div>
+					<div class="col-md-2"><a href="#whatwedo">What we do</a></div>
+					<div class="col-md-2"><a href="#freebies">Famous Freebies</a></div>
+					<div class="col-md-2"><a href="#people">What People Think</a></div>
+					<div class="col-md-2"><a href="#team">Meet Our Team</a></div>
+					<div class="col-md-2"><a href="#numbers">Numbers Don't Lie</a></div>
 				</div>
 			</div>
 			<div class="row header-image">
@@ -185,12 +305,12 @@
 		<div class="container">
 			<!--ABOUT TIM SECTION STARTS-->
 
-			<div class ="row about-tim-container">
-					<div class="row section-heading">
+			<div class ="row section about-tim-container">
+					<div class="row section-heading" id="about">
 						<h2>About Creative Tim</h2>
 					</div>
 					<div class="row">
-						<div class="col-md-4 col-md-offset-4 about-heading-border"></div>
+						<div class="col-md-4 col-md-offset-4 section-heading-border"></div>
 					</div>
 					<div class="row section-description">
 						<div class="col-md-2"></div>
@@ -228,15 +348,16 @@
 							<div class="row">
 								<img src="C:\Users\HP\Desktop\project2\Images\About\7.jpg" alt="desktop" style= "width: 400px; height: 565px">
 							</div>
-						</div>						
+						</div>	
+					</div>					
 			</div>
 
 			<!--ABOUT TIM SECTION CLOSED-->
 
 			<!--WHAT WE DO SECTION STARTS-->
 
-			<div class="row what-we-do-container">
-					<div class="row section-heading">
+			<div class="row section what-we-do-container">
+					<div class="row section-heading" id="whatwedo">
 						<h2>What We do</h2>
 					</div>
 					<div class="row">
@@ -295,8 +416,8 @@
 
 			<!--Our Famous Freebies Starts -->
 
-			<div class="row our-famous-freebies-container">
-				<div class="row section-heading">
+			<div class="row section our-famous-freebies-container">
+				<div class="row section-heading" id="freebies">
 					<h2>Our Famous Freebies</h2>
 				</div>
 				<div class="row">
@@ -461,44 +582,64 @@
 			</div>
 			<!--Our Famous Freebies Section ends-->
 
-<!--what people think section-->
-			<div class="row what-people-think-container">
+			<!--what people think section-->
+			<div class="row section what-people-think-container">
 				<div class="row">
-					<div class="row section-heading">
-						<h2>What People Think</h2>
+					<div class="row section-heading" id="people">
+						<h2>WHAT PEOPLE THINK</h2>
 					</div>
 					<div class="row">
 						<div class="col-md-4 col-md-offset-4 section-heading-border"></div>
 					</div>
-					<div class="col-md-8 col-md-offset-2 section-description">
+					
+					<div class="row para section-description" id="ed">
 						<p>
 							
 								"Hey Creative-Tim team.
 								Absolutely love your work! It's a God-send for a developer like me who doesn't know his ass from great design! Keep up the awesome work! Ed"
 						</p>
 					</div>
+					<div class="row para section-description" id="ab">
+						<p>
+							Hello there, My Name is Abhi Khatri. You're simply awesome. I would love to contact you.
+							I'm a new front-end developer but everytime I checkout your stuff it gives me idea to make my own stuff. Keep it up :)
+						</p>
+					</div>
+					<div class="row para section-description" id="fa">
+						<p>
+							Finding a website with a vast purpose is always inspiring to continue front web development. But you did Magic my friends.
+							Keep going and be sure if there is a donation, I'm in. 
+							Thanks for your daily hardworking. hope to meet u guys one day.
+						</p>
+					</div>
+					<div class="row para section-description" id="ko">
+						<p>
+							Hi, your site and all the stuff on it looks simply awesome, thank's for sharing. Love this. Greetings from Germany!
+						</p>
+					</div>
+				
 					<div class="row names">
-						<div class="col-md-3">
+						<div class="col-md-3" id="edwin">
 							EDWIN REDE
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3" id="abhi">
 							ABHI KHATRI
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3" id="fars">
 							FARS KID
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3" id="kolo">
 							KOLODZIEJ NIKOLAI
 						</div>
 					</div>
 				</div>
-
+			</div>
 			<!--what people think ends-->
 
 			<!--meet our people section starts-->
-			<div class="row team-container">
+			<div class="row section team-container">
 				<div class="row">
-					<div class="row section-heading">
+					<div class="row section-heading" id="team">
 						<h2>Meet Our Team</h2>
 					</div>
 					<div class="row">
@@ -510,10 +651,10 @@
 							<div class="row">
 								<img src="C:\Users\HP\Desktop\project2\Images\team\1.jpg" class="img-circle">
 							</div>
-							<div class="row">
+							<div class="row team-member-name">
 								<h3>ELENA CONACEL</h3>
 							</div>
-							<div class="row">
+							<div class="row team-member-desc">
 								Elena is one of the co-founders and takes care of growth, product development and partnerships. 
 								She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.
 							</div>
@@ -523,22 +664,22 @@
 								</div>
 							</div>
 							<div class="row social">
-								<div class="col-md-8 col-md-offset-2">
+								<ul>
 									
-										<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+										<li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
 									 
-										<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-								</div>	
+										<li><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></li>
+								</ul>	
 							</div>
 						</div>
 						<div class="col-md-3 team">
 							<div class="row">
 								<img src="C:\Users\HP\Desktop\project2\Images\team\2.png" class="img-circle">
 							</div>
-							<div class="row">
+							<div class="row team-member-name">
 								<h3>DIANA CALIMAN</h3>
 							</div>
-							<div class="row">
+							<div class="row team-member-desc">
 								Diana is the person behind our social media channels, she takes care of our users' community and communication. 
 								She is ambitious, hard-working, instantly likeable and fun to be around.
 							</div>
@@ -548,27 +689,27 @@
 								</div>
 							</div>
 							<div class="row social">
-								<div class="col-md-8 col-md-offset-2">
-									<div class="col-md-3">
-										<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-									 </div>
-									 <div class="col-md-3">
-										<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-									</div>
-									<div class="col-md-3">
-										<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-									</div>
-								</div>
+								<ul>
+									
+										<li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+									 
+									 
+										<li><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></li>
+									
+									
+										<li><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+									
+								</ul>
 							</div>
 						</div>
 						<div class="col-md-3 team">
 							<div class="row">
 								<img src="C:\Users\HP\Desktop\project2\Images\team\3.png" class="img-circle">
 							</div>
-							<div class="row">
+							<div class="row team-member-name">
 								<h3>ALEX PADERARU</h3>
 							</div>
-							<div class="row">
+							<div class="row team-member-desc">
 								Alex is one of the co-founders and drives the technical strategy of the platform, customer support and brand. 
 								He is level-headed, smart and with a taste for simple, aesthetic design.
 							</div>
@@ -578,27 +719,27 @@
 								</div>
 							</div>
 							<div class="row social">
-								 <div class="col-md-8 col-md-offset-2">
-									<div class="col-md-3">
-										<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-									 </div>
-									 <div class="col-md-3">
-										<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-									</div>
-									<div class="col-md-3">
-										<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-									</div>
-								</div>
+								 <ul>
+									
+										<li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+									 
+									 
+										<li><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></li>
+									
+									
+										<li><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+								
+								</ul>
 							</div>
 						</div>
 						<div class="col-md-3 team">
 							<div class="row">
 								<img src="C:\Users\HP\Desktop\project2\Images\team\4.jpg" class="img-circle">
 							</div>
-							<div class="row">
+							<div class="row team-member-name">
 								<h3>BENIAMIN MARCU</h3>
 							</div>
-							<div class="row">
+							<div class="row team-member-desc">
 								Beni is the guy responsible for keeping the platform in check, improving its functionality and adding new features.
 								He is driven, always open for learning more, friendly and a fan of Ruby on Rails.
 							</div>
@@ -608,17 +749,17 @@
 								</div>
 							</div>
 							<div class="row social">
-								<div class="col-md-8 col-md-offset-2">
-									<div class="col-md-3">
-										<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-									 </div>
-									 <div class="col-md-3">
-										<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-									</div>
-									<div class="col-md-3">
-										<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-									</div>
-								</div>
+								<ul>
+									
+									   	<li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+									 
+									 
+										<li><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></li>
+									
+									
+										<li><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+									
+								</ul>
 							</div>
 						</div>
 				</div>
@@ -626,9 +767,9 @@
 			<!--meet our people ends-->
 
 			<!--Numbers dont lie section starts-->
-			<div class="row what-people-think-container">
+			<div class="row section numbers-dont-lie-container">
 				<div class="row">
-					<div class="row section-heading">
+					<div class="row section-heading" id="numbers">
 						<h2>Numbers Don't Lie</h2>
 					</div>
 					<div class="row">
@@ -661,27 +802,83 @@
 			</div>
 			<!--end of Numbers dont lie-->
 		</div>
-		<!--google maps section starts-->
+		<!--map section-->
+		<div class="map-and-box">
+			<div class="box">
+				<h2>Where to meet?</h2>
+				<div class="address">N-81, Barakhamba Road, Block N, Cannaught Place, Block N, Connaught Place, New Delhi, Delhi 110001</div>
+				<h2>Want to say hello!</h2>
+				<div class="box-button-1">
+					<button>Contact US</button>
+				</div>
+				<div class="comment">Thank you for 948 shares!</div>
+				<div class="box-button-2">
+					<button type="button" class="btn"><i class="fa fa-facebook" aria-hidden="true"></i>    Facebook</button>
+					<button type="button" class="btn"><i class="fa fa-twitter" aria-hidden="true"></i>    Twitter</button>
+				</div>
+			</div>	
+			<div id="map"></div>
+		</div>
+		<!--map section ends here-->
 		<div class="container-fluid">
-			<div class="row">
-				<div id="map"></div>
-				<script>
-	      			function initMap() {
-			        var uluru = {lat: 20.5937, lng: 78.9629};
-			        var map = new google.maps.Map(document.getElementById('map'), {
-			          zoom: 11,
-			          center: {lat: 28.7041, lng: 77.1025}
-			        });
-			        var marker = new google.maps.Marker({
-			          position: {lat: 28.631374, lng: 77.222031},
-			          map: map
-			        });
-			      }
-	    		</script>
-	    		 <script async defer
-	    			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3HJbAkXIoVzgRtHeNCVBSVph-PxZubLs&callback=initMap">
-	    		</script>
-	    	</div>
-	    </div>
+		<!--footer starts-->
+		<div class="row footer">
+			
+				<div class="col-md-6">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Sponsership</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-md-4 col-md-offset-1">
+					<ul>
+						<li><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
+						<li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
+						<li><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></li>
+					</ul>
+				
+				</div>
+			
+		</div>
+		<!--footer ends-->
+
+		 	<script>
+      			function initMap() {
+		        var uluru = {lat: 20.5937, lng: 78.9629};
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 11,
+		          center: {lat: 28.7041, lng: 77.1025}
+		        });
+		        var marker = new google.maps.Marker({
+		          position: {lat: 28.631374, lng: 77.222031},
+		          map: map
+		        });
+		      }
+    		</script>
+    		 <script async defer
+    			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3HJbAkXIoVzgRtHeNCVBSVph-PxZubLs&callback=initMap">
+    		</script>
+	    	 
+		    <script>
+			$("#abhi").click(function() {
+				$(".para").hide();
+				$("#ab").show();
+			});
+			$("#fars").click(function() {
+				$(".para").hide();
+				$("#fa").show();
+			});
+			$("#kolo").click(function() {
+				$(".para").hide();
+				$("#ko").show();
+			});
+			$("#edwin").click(function() {
+				$(".para").hide();
+				$("#ed").show();
+			});
+			</script>
 	</body>
 </html>
