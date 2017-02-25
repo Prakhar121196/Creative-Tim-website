@@ -15,16 +15,18 @@
 	<style>
 		.header{
 				position: fixed;
-				padding: 10px 0;
+				padding-top: 10px;
 				border-bottom: 1px solid #9E9E9E;
 				background-color: white;
-				font-weight: bold;
 				z-index: 1;
 				width: 100%;
 				text-align: center;
-				font-size: 15px;
+				font-size: 18px;
 				font-family: 'Roboto', sans-serif;
 		}	
+		.tim{	
+				font-size:18px;
+		}
 		.header a{
 			color: #424242;
 			text-decoration: none;
@@ -37,6 +39,7 @@
 				background-position: center;
 				background-size: cover;
 				background-repeat: no-repeat;	
+				text-align: center;
 		}	
 		.sub-header{
 				position: absolute;
@@ -44,7 +47,6 @@
 				left: 27%;
 		}
 		.website-name{
-				text-align: center;
 				font-size: 100px;
 				color: white;
 				font-family: 'Dosis', sans-serif;
@@ -53,14 +55,15 @@
 				border: 1px solid white;
 		}
 		.website-description{
-				text-align: center;
 				font-size: 20px;
 				color: white;
 				padding: 20px;
 				font-family: 'Open Sans', sans-serif;
 		}
+		
 		.section{
-				margin-bottom: 80px;
+				margin: 50px;
+				text-align: center;
 		}
 		.section-heading h2{
 				text-align: center;
@@ -79,13 +82,13 @@
 				font-family: 'Josefin Sans', sans-serif;
 		}
 		.about-tim-container img{
-				padding: 10px;
-				margin: 30px;
+				width: 380px;
+				padding: 20px;
 		}
 		.what-we-do-container img{
 				width: 110px;
 				margin-top: 30px;
-				margin-left: 7px;
+				
 
 		}
 		.what-we-do-subheading {
@@ -93,7 +96,6 @@
 				font-weight: bold;
 				font-size: 20px;
 				font-family: 'Roboto', sans-serif;
-				margin-right: 35px;
 				font-family: 'Roboto', sans-serif;
 		}
 		.what-we-do-paragraph {
@@ -104,8 +106,8 @@
 				font-family: 'Josefin Sans', sans-serif;
 		}
 		.our-famous-freebies-container img{
-				width: 350px;
-				padding: 0px;
+				width:350px;
+				padding: 10px;
 		}
 		.our-famous-freebies-container img:hover{
 			border: 2px solid black;
@@ -126,7 +128,7 @@
 				text-align: center;
 				margin-top: 10px;
 				color: #616161;
-				font-size: 17px;
+				font-size: 15px;
 				padding: 10px;
 				font-family: 'Josefin Sans', sans-serif;
 		}	
@@ -167,7 +169,6 @@
 				width: 120px;
 				border:5px solid #EF9A9A;
 				padding:0;
-				margin-left: 70px;
 		}
 		.team{
 				padding:30px;
@@ -183,7 +184,7 @@
 				font-size: 18px;
 		}
 		.social{
-				margin-left: 40px;
+				margin-right:10px;
 				cursor: pointer;
 		}
 		.social li{
@@ -226,12 +227,14 @@
 				font-size: 25px;
 				text-align: center;
 				padding: 10px;
+				font-family: 'Dosis', sans-serif;
 		}
 		.address{
 				font-size: 20px;
 				text-align: center;
 				padding: 20px;
 				color: #9E9E9E;
+				font-family: 'Josefin Sans', sans-serif;
 		}
 		.box-button-1 button{
 			background-color: #424242;
@@ -248,6 +251,7 @@
 			font-size: 25px;
 			color:#263238;
 			margin:20px;
+			font-family: 'Josefin Sans', sans-serif;
 		}
 		.box-button-2 button{
 			background:white;
@@ -266,87 +270,114 @@
        }
 
 		.footer{
-				background-color:#263238;
-				color:white;
-				height:50px;
+				line-height: 20px;
+				vertical-align: middle;
+		}
+		.footer-color-black{
+				background-color: rgba(30,30,30,.97);
+				color: #DDDDDD;
+				width: 100%;
+		}
+		.footer a{
+				text-decoration: none;
+				padding: 10px;
+				color: #DDDDDD;
+				float: left;
 		}
 		.footer li{
 				display:inline;
-				padding: 20px;
-				text-align:center;
-				font-size: 20px;
-				cursor:pointer;
-				margin-top: 10px;
+				padding: 10px;
 		}
+		.social-area{
+				padding: 10px;
+				float: right;
+				cursor: pointer;
+		}
+		.fa{
+				font-size: 20px;
+				position: relative;
+				top: -2px;
+				width: 24px;
+		}				
 	</style>
 	<body>
 		<div class="container-fluid">
 			<div class="row header">
-				<div class="col-md-3"><a href="#">CREATIVE TIM</a></div>
-				<div class="col-md-9">
-					<div class="col-md-2"><a href="#about">About</a></div>
-					<div class="col-md-2"><a href="#whatwedo">What we do</a></div>
-					<div class="col-md-2"><a href="#freebies">Famous Freebies</a></div>
-					<div class="col-md-2"><a href="#people">What People Think</a></div>
-					<div class="col-md-2"><a href="#team">Meet Our Team</a></div>
-					<div class="col-md-2"><a href="#numbers">Numbers Don't Lie</a></div>
+				<div class="col-md-2 col-xs-2 tim"><a href="#">CREATIVE TIM</a></div>
+				<div class="col-md-8 col-xs-8">
+					<div class="col-md-1 col-xs-1"><a href="#about">About</a></div>
+					<div class="col-md-2 col-xs-2"><a href="#whatwedo">What we do</a></div>
+					<div class="col-md-3 col-xs-3"><a href="#freebies">Famous Freebies</a></div>
+					<div class="col-md-3 col-xs-3"><a href="#people">What People Think</a></div>
+					<div class="col-md-1 col-xs-1"><a href="#team">Team</a></div>
+					<div class="col-md-2 col-xs-2"><a href="#numbers">Numbers</a></div>
 				</div>
+				<div class="col-md-2 col-xs-2">
+					<div class="social-area pull-right">
+						<i class="fa fa-facebook-square"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-google-plus-square"></i>
+					</div>
+				</div>	
 			</div>
 			<div class="row header-image">
 				<div class="sub-header">
 					<div class="row website-name">CREATIVE TIM</div>
 					<div class="row">
-						<div class="col-md-4 col-md-offset-4 website-border"></div>
+						<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 website-border"></div>
 					</div>
 					<div class="row website-description">Awesome Bootstrap freebies and templates to build better websites</div>
 				</div>	
 			</div>
 		</div>
+		<!--header ends-->
 		<div class="container">
 			<!--ABOUT TIM SECTION STARTS-->
 
 			<div class ="row section about-tim-container">
+				<div class="row">
 					<div class="row section-heading" id="about">
 						<h2>About Creative Tim</h2>
 					</div>
 					<div class="row">
-						<div class="col-md-4 col-md-offset-4 section-heading-border"></div>
+						<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 section-heading-border"></div>
 					</div>
 					<div class="row section-description">
-						<div class="col-md-2"></div>
-						<div class="col-md-8">
+						<div class="col-md-2 col-xs-2"></div>
+						<div class="col-md-8 col-xs-8">
 							<p>
 								Creative Tim is a startup that creates design tools that make the web development process faster and easier. We love the web and care deeply for how users interact with a digital product. We power businesses and individuals to create better looking web projects around the world.
 					 		</p>
 					 	</div>
-					 	<div class="col-md-2"></div>
+					 	<div class="col-md-2 col-xs-2"></div>
 					</div>
+				</div>
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-4 col-xs-12">
 							<div class="row">
-								<img src="C:\Users\HP\Desktop\project2\Images\About\1.jpg" alt="desktop" style= "width: 400px; height: 565px">
+								<img src="C:\Users\HP\Desktop\project2\Images\About\1.jpg">
 							</div>
 							<div class="row">
-								<img src="C:\Users\HP\Desktop\project2\Images\About\2.jpg" alt="desktop" style= "width: 400px; height: 565px">
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="row">
-								<img src="C:\Users\HP\Desktop\project2\Images\About\3.jpg" alt="desktop" style= "width: 400px; height: 389px">
-							</div>
-							<div class="row">
-								<img src="C:\Users\HP\Desktop\project2\Images\About\4.jpg" alt="desktop" style= "width: 400px; height: 389px">
-							</div>
-							<div class="row">
-								<img src="C:\Users\HP\Desktop\project2\Images\About\5.jpg" alt="desktop" style= "width: 400px; height: 389px">
+								<img src="C:\Users\HP\Desktop\project2\Images\About\2.jpg">
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-xs-12">
 							<div class="row">
-								<img src="C:\Users\HP\Desktop\project2\Images\About\6.jpg" alt="desktop" style= "width: 400px; height: 565px">
+								<img src="C:\Users\HP\Desktop\project2\Images\About\3.jpg">
 							</div>
 							<div class="row">
-								<img src="C:\Users\HP\Desktop\project2\Images\About\7.jpg" alt="desktop" style= "width: 400px; height: 565px">
+								<img src="C:\Users\HP\Desktop\project2\Images\About\4.jpg">
+							</div>
+							<div class="row">
+								<img src="C:\Users\HP\Desktop\project2\Images\About\5.jpg">
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<div class="row">
+								<img src="C:\Users\HP\Desktop\project2\Images\About\6.jpg" alt="desktop" >
+							</div>
+							<div class="row">
+								<img src="C:\Users\HP\Desktop\project2\Images\About\7.jpg" alt="desktop" >
 							</div>
 						</div>	
 					</div>					
@@ -361,14 +392,14 @@
 						<h2>What We do</h2>
 					</div>
 					<div class="row">
-						<div class="col-md-4 col-md-offset-4 section-heading-border"></div>
+						<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 section-heading-border"></div>
 					</div>
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-4 col-xs-4">
 							<div class="row">
-								<div class="col-md-3"></div>
-								<div class="col-md-6"><img src="C:\Users\HP\Desktop\project2\Images\What we do\1.png"></div>
-								<div class="col-md-3"></div>
+								<div class="col-md-3 col-xs-3"></div>
+								<div class="col-md-6 col-xs-6"><img src="C:\Users\HP\Desktop\project2\Images\What we do\1.png"></div>
+								<div class="col-md-3 col-xs-3"></div>
 							</div>
 							<div class="row what-we-do-subheading">
 								Create UI Tools
@@ -379,11 +410,11 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-xs-4">
 							<div class="row">
-								<div class="col-md-3"></div>
-								<div class="col-md-6"><img src="C:\Users\HP\Desktop\project2\Images\What we do\2.png"></div>
-								<div class="col-md-3"></div>
+								<div class="col-md-3 col-xs-3"></div>
+								<div class="col-md-6 col-xs-6"><img src="C:\Users\HP\Desktop\project2\Images\What we do\2.png"></div>
+								<div class="col-md-3 col-xs-3"></div>
 							</div>
 							<div class="row what-we-do-subheading">
 								Share Freebies
@@ -394,11 +425,11 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-xs-4">
 							<div class="row">
-								<div class="col-md-3"></div>
-								<div class="col-md-6"><img src="C:\Users\HP\Desktop\project2\Images\What we do\3.jpg"></div>
-								<div class="col-md-3"></div>
+								<div class="col-md-3 col-xs-3"></div>
+								<div class="col-md-6 col-xs-6"><img src="C:\Users\HP\Desktop\project2\Images\What we do\3.jpg"></div>
+								<div class="col-md-3 col-xs-3"></div>
 							</div>
 							<div class="row what-we-do-subheading">
 								Power Hackathons
@@ -421,20 +452,20 @@
 					<h2>Our Famous Freebies</h2>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-md-offset-4 section-heading-border"></div>
+					<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 section-heading-border"></div>
 				</div>
 				<div class="row section-description">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
+					<div class="col-md-2 col-xs-2"></div>
+					<div class="col-md-8 col-xs-8">
 						<p>
 							Check out the most popular freebies from our platform. We would love to hear your feedback.
 
 						</p>
 					</div>
-					<div class="col-md-2"></div>
+					<div class="col-md-2 col-xs-2"></div>
 				</div>
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-12">
 						<img src="C:\Users\HP\Desktop\project2\Images\Famous Freebies\1.jpg">
 						<div class="row freebie-image-subheading-1">
 							Just Launched
@@ -448,17 +479,17 @@
 								</p>
 						</div>
 						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-3 button1">
+							<div class="col-md-3 col-xs-3"></div>
+							<div class="col-md-3 col-xs-3 button1">
 								<button>Live View</button>
 							</div>
-							<div class="col-md-4 button2">
+							<div class="col-md-4 col-xs-4 button2">
 								<button>Free Download</button>
 							</div>
-							<div class="col-md-2"></div>
+							<div class="col-md-2 col-xs-2"></div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-12">
 						<img src="C:\Users\HP\Desktop\project2\Images\Famous Freebies\2.jpg">
 						<div class="row freebie-image-subheading-1">
 							6,800+ Downloads
@@ -472,17 +503,17 @@
 								</p>
 						</div>
 						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-3 button1">
+							<div class="col-md-3 col-xs-3"></div>
+							<div class="col-md-3 col-xs-3 button1">
 								<button>Live View</button>
 							</div>
-							<div class="col-md-4 button2">
+							<div class="col-md-4 col-xs-4 button2">
 								<button>Free Download</button>
 							</div>
-							<div class="col-md-2"></div>
+							<div class="col-md-2 col-xs-2"></div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-12">
 						<img src="C:\Users\HP\Desktop\project2\Images\Famous Freebies\3.jpg">
 						<div class="row freebie-image-subheading-1">
 							19.200+ Downloads
@@ -496,17 +527,17 @@
 								</p>
 						</div>
 						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-3 button1">
+							<div class="col-md-3 col-xs-3"></div>
+							<div class="col-md-3 col-xs-3 button1">
 								<button>Live View</button>
 							</div>
 							<div class="col-md-4 button2">
 								<button>Free Download</button>
 							</div>
-							<div class="col-md-2"></div>
+							<div class="col-md-2 col-xs-2"></div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-12">
 						<img src="C:\Users\HP\Desktop\project2\Images\Famous Freebies\4.jpg">
 						<div class="row freebie-image-subheading-1">
 							3.100+ Downloads
@@ -520,17 +551,17 @@
 								</p>
 						</div>
 						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-3 button1">
+							<div class="col-md-3 col-xs-3"></div>
+							<div class="col-md-3 col-xs-3 button1">
 								<button>Live View</button>
 							</div>
-							<div class="col-md-4 button2">
+							<div class="col-md-4 col-xs-4 button2">
 								<button>Free Download</button>
 							</div>
-							<div class="col-md-2"></div>
+							<div class="col-md-2 col-xs-2"></div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-12">
 						<img src="C:\Users\HP\Desktop\project2\Images\Famous Freebies\5.jpg">
 						<div class="row freebie-image-subheading-1">
 							8.500+ Downloads
@@ -544,17 +575,17 @@
 								</p>
 						</div>
 						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-3 button1">
+							<div class="col-md-3 col-xs-3"></div>
+							<div class="col-md-3 col-xs-3 button1">
 								<button>Live View</button>
 							</div>
-							<div class="col-md-4 button2">
+							<div class="col-md-4 col-xs-4 button2">
 								<button>Free Download</button>
 							</div>
-							<div class="col-md-2"></div>
+							<div class="col-md-2 col-xs-4"></div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-12">
 						<img src="C:\Users\HP\Desktop\project2\Images\Famous Freebies\6.jpg">
 						<div class="row freebie-image-subheading-1">
 							6.200+ Downloads
@@ -568,14 +599,14 @@
 								</p>
 						</div>
 						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-3 button1">
+							<div class="col-md-3 col-xs-3"></div>
+							<div class="col-md-3 col-xs-3 button1">
 								<button>Live View</button>
 							</div>
-							<div class="col-md-4 button2">
+							<div class="col-md-4 col-xs-4 button2">
 								<button>Free Download</button>
 							</div>
-							<div class="col-md-2"></div>
+							<div class="col-md-2 col-xs-2"></div>
 						</div>
 					</div>
 				</div>
@@ -589,7 +620,7 @@
 						<h2>WHAT PEOPLE THINK</h2>
 					</div>
 					<div class="row">
-						<div class="col-md-4 col-md-offset-4 section-heading-border"></div>
+						<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 section-heading-border"></div>
 					</div>
 					
 					<div class="row para section-description" id="ed">
@@ -619,16 +650,16 @@
 					</div>
 				
 					<div class="row names">
-						<div class="col-md-3" id="edwin">
+						<div class="col-md-3 col-xs-3" id="edwin">
 							EDWIN REDE
 						</div>
-						<div class="col-md-3" id="abhi">
+						<div class="col-md-3 col-xs-3" id="abhi">
 							ABHI KHATRI
 						</div>
-						<div class="col-md-3" id="fars">
+						<div class="col-md-3 col-xs-3" id="fars">
 							FARS KID
 						</div>
-						<div class="col-md-3" id="kolo">
+						<div class="col-md-3 col-xs-3" id="kolo">
 							KOLODZIEJ NIKOLAI
 						</div>
 					</div>
@@ -643,11 +674,11 @@
 						<h2>Meet Our Team</h2>
 					</div>
 					<div class="row">
-						<div class="col-md-4 col-md-offset-4 section-heading-border"></div>
+						<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 section-heading-border"></div>
 					</div>
 				</div>
 				<div class="row ">
-						<div class="col-md-3 team">
+						<div class="col-md-3 col-xs-3 team">
 							<div class="row">
 								<img src="C:\Users\HP\Desktop\project2\Images\team\1.jpg" class="img-circle">
 							</div>
@@ -659,7 +690,7 @@
 								She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.
 							</div>
 							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
+								<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
 								<hr>
 								</div>
 							</div>
@@ -672,7 +703,7 @@
 								</ul>	
 							</div>
 						</div>
-						<div class="col-md-3 team">
+						<div class="col-md-3 col-xs-3 team">
 							<div class="row">
 								<img src="C:\Users\HP\Desktop\project2\Images\team\2.png" class="img-circle">
 							</div>
@@ -684,7 +715,7 @@
 								She is ambitious, hard-working, instantly likeable and fun to be around.
 							</div>
 							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
+								<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
 									<hr>
 								</div>
 							</div>
@@ -702,7 +733,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-3 team">
+						<div class="col-md-3 col-xs-3 team">
 							<div class="row">
 								<img src="C:\Users\HP\Desktop\project2\Images\team\3.png" class="img-circle">
 							</div>
@@ -714,7 +745,7 @@
 								He is level-headed, smart and with a taste for simple, aesthetic design.
 							</div>
 							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
+								<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
 								<hr>
 								</div>
 							</div>
@@ -732,7 +763,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-3 team">
+						<div class="col-md-3 col-xs-3 team">
 							<div class="row">
 								<img src="C:\Users\HP\Desktop\project2\Images\team\4.jpg" class="img-circle">
 							</div>
@@ -744,7 +775,7 @@
 								He is driven, always open for learning more, friendly and a fan of Ruby on Rails.
 							</div>
 							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
+								<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
 								<hr>
 								</div>
 							</div>
@@ -773,9 +804,9 @@
 						<h2>Numbers Don't Lie</h2>
 					</div>
 					<div class="row">
-						<div class="col-md-4 col-md-offset-4 section-heading-border"></div>
+						<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 section-heading-border"></div>
 					</div>
-					<div class="col-md-8 col-md-offset-2 section-description">
+					<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 section-description">
 						<p>
 							
 								"Started from the bottom now we're here" - Drake
@@ -783,17 +814,17 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-4">
 						<div class="row Numbers-sub-part1">Users</div>
 						<div class="row Numbers-sub-part2">Businesses and Professionals</div>
 						<div class="row Numbers-sub-part3">116.000+</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-4">
 						<div class="row Numbers-sub-part1">Downloads</div>
 						<div class="row Numbers-sub-part2">Freebies, Templates & UI Kits</div>
 						<div class="row Numbers-sub-part3">186.000+</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-4">
 						<div class="row Numbers-sub-part1">Countries</div>
 						<div class="row Numbers-sub-part2">Where we made sponsorships</div>
 						<div class="row Numbers-sub-part3">14</div>
@@ -820,29 +851,43 @@
 			<div id="map"></div>
 		</div>
 		<!--map section ends here-->
-		<div class="container-fluid">
+		
 		<!--footer starts-->
-		<div class="row footer">
-			
-				<div class="col-md-6">
+		<footer class=" footer footer-color-black">
+			<div class="container-fluid">
+				<nav class="pull-left navbar-burger">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Sponsership</a></li>
+						<li>
+							<a href="#">
+							Home
+							</a>
+						</li>
+						<li>
+							<a href="#">
+							Contact
+							</a>
+						</li>
+						<li>
+							<a href="#">
+							Blog
+							</a>
+						</li>
+						<li>
+							<a href="#">
+							Sponserships
+							</a>
+						</li>
 					</ul>
+				</nav>
+				<div class="social-area pull-right">
+					<i class="fa fa-facebook-square"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-google-plus-square"></i>
+					<i class="fa fa-dribble"></i>
 				</div>
-				
-				<div class="col-md-4 col-md-offset-1">
-					<ul>
-						<li><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
-						<li><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></li>
-						<li><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></li>
-					</ul>
-				
-				</div>
-			
-		</div>
+			</div>
+		</footer>
+
 		<!--footer ends-->
 
 		 	<script>
